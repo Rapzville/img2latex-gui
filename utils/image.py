@@ -28,7 +28,7 @@ def process_image(img, model, result_box, image_label, render_label, history):
         render_label.image = tk_render
 
     history.append((img.copy(), latex))
-    if len(history) > 5:
+    if len(history) > 7:
         history.pop(0)
 
 def take_screenshot():
